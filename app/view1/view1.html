@@ -1,0 +1,15 @@
+
+<p>This is the partial for view 1.</p>
+<h1>{{var1}}</h1>
+<p> selected option  {{selectedName}}</p>
+<ul>
+    <li ng-repeat="x in myData">{{ x.Name + ', ' + x.Country }}</li>
+</ul>
+<h4>Bucket list</h4>
+<ul>
+    <li ng-repeat="x in myBuckets">{{ x.Name + ', ' + x.CreationDate }}</li>
+</ul>
+<select ng-model="selectedName" ng-options="x.Name for x in myData"/>
+
+
+
